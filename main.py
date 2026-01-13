@@ -66,7 +66,7 @@ for line in table.index:
     pyautogui.press("tab")
     # obs
     observation = table.loc[line, "obs"]
-    if observation != "nan":
+    if str(observation) != "nan":
         pyautogui.write(str(observation))
     pyautogui.press("tab")
     # enviar
