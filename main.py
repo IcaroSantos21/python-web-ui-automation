@@ -34,3 +34,8 @@ pyautogui.press("tab")
 # Clicar pora logar
 pyautogui.press("enter")
 
+# Importando base de dados
+table = pandas.read_csv("produtos.csv")
+
+for line in table:
+    ...
